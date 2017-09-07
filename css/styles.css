@@ -119,8 +119,19 @@ nav a {
   color: #EDF2F4;
 }
 
+nav a:first-child:after {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  background-image: url("../images/logo.jpg");
+  background-size: contain;
+  height: 45px;
+  width: 45px;
+  top: 5px;
+  left: 40px;
+}
 /* Change the color of links on hover */
-nav a:hover {
+nav a:not(:first-child):hover {
     background-color: #8D99AE;
     color: #EDF2F4;
 }
@@ -180,7 +191,7 @@ p + h3 {
   .profile-img {
     width: 200px;
   }
-  nav a {
+  nav a:not(:first-child) {
     display: none;
   }
   nav a.icon {
