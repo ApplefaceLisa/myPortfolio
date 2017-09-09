@@ -91,9 +91,19 @@ footer {
   padding: 10px;
   display: inline-block;
 }
+/* Style all font awesome icons */
 .fa {
-  font-size: 28px;
-  color: #8D99AE;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    color: #2B2D42;
+    background: #EDF2F4;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
 }
 
 /* Navigation
@@ -313,19 +323,19 @@ p + h3 {
   /* timeline */
   /* Place the timelime to the left */
   .timeline::after {
-    left: 31px;
+    left: 10px;
   }
 
 /* Full-width containers */
   .tl-container {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 50px;
+    padding-right: 5px;
   }
 
 /* Make sure that all arrows are pointing leftwards */
   .tl-container::before {
-    left: 60px;
+    left: 40px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
@@ -333,7 +343,7 @@ p + h3 {
 
 /* Make sure all circles are at the same spot */
   .tl-left::after, .tl-right::after {
-    left: 18px;
+    left: -2px;
   }
 
 /* Make all right containers behave like the left ones */
