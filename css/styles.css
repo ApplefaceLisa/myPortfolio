@@ -363,14 +363,14 @@ p + h3 {
 
 /* Full-width containers */
   .tl-container {
-    width: 100%;
+    width: 90%;
     padding-left: 50px;
     padding-right: 5px;
   }
 
 /* Make sure that all arrows are pointing leftwards */
   .tl-container::before {
-    left: 40px;
+    left: 41px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
@@ -384,5 +384,13 @@ p + h3 {
 /* Make all right containers behave like the left ones */
   .tl-right {
     left: 0%;
+  }
+}
+@media (max-width: 419px){
+  .flex-container {
+    justify-content: center;
+  }
+  .project {
+    width: 70%;
   }
 }
