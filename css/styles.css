@@ -141,9 +141,9 @@ nav a:first-child:after {
   position: absolute;
   background-image: url("../images/logo.jpg");
   background-size: contain;
-  height: 45px;
-  width: 45px;
-  top: 5px;
+  height: 3rem;
+  width: 3rem;
+  top: 2px;
   left: 40px;
 }
 /* Change the color of links on hover */
@@ -366,7 +366,7 @@ p + h3 {
     width: 200px;
   }
   nav a:first-child:after {
-    left: 45%;
+    left: 15%;
   }
   nav a:not(:first-child) {
     display: none;
@@ -426,6 +426,9 @@ p + h3 {
 @media (max-width: 419px){
   html {
     font-size: 12px;
+  }
+  nav a:first-child:after {
+    top: 6px;
   }
   .flex-container {
     justify-content: center;
