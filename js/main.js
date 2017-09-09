@@ -15,6 +15,8 @@ function closeMenu() {
     if (topnav.classList.contains("responsive")) {
         topnav.className = "topnav";
     }
+    var menuIcon = document.getElementById("menuIcon-container");
+    menuIcon.classList.remove("menuIcon-change");
 }
 
 document.getElementById("menuIcon").addEventListener('click', toggleMenu);
