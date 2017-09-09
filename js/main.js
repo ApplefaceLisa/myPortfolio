@@ -1,16 +1,19 @@
 function toggleMenu() {
-    var x = document.getElementById("topnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    var topnav = document.getElementById("topnav");
+    if (topnav.className === "topnav") {
+        topnav.className += " responsive";
     } else {
-        x.className = "topnav";
+        topnav.className = "topnav";
     }
+
+    var menuIcon = document.getElementById("menuIcon-container");
+    menuIcon.classList.toggle("menuIcon-change");
 }
 
 function closeMenu() {
-    var x = document.getElementById("topnav");
-    if (x.classList.contains("responsive")) {
-        x.className = "topnav";
+    var topnav = document.getElementById("topnav");
+    if (topnav.classList.contains("responsive")) {
+        topnav.className = "topnav";
     }
 }
 
