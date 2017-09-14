@@ -62,11 +62,19 @@ a:hover {
   padding: 10px;
   display: inline-block;
 }
-
+#particle {
+  background-color: #2B2D42;
+  position: absolute;
+  top:0;
+  right:0;
+  left: 0;
+  height: 425px;
+  z-index:-1;
+}
 
 /* Header and Footer
 -------------------------*/
-header, footer {
+footer {
   background: #2B2D42;
   color: #8D99AE;
 }
@@ -120,7 +128,6 @@ nav {
   top: 0;
   width: 100%;
   /*background-color: #2B2D42;*/
-  z-index: 100;
 }
 nav a {
   display: inline-block;
@@ -207,21 +214,22 @@ h3 ~ p {
 
 /* Projects
 -------------------------*/
-.flex-container {
+.projects-container {
   width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  align-items: start;
+  justify-content: center;
 }
 .project {
-    width: 30%;
+    width: 100%;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-    margin: 10px 5px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -230,7 +238,7 @@ h3 ~ p {
 }
 
 /* Add some padding inside the card container */
-.prj-container {
+.project-content {
     padding: 2px 16px;
 }
 .project img {
@@ -390,8 +398,11 @@ p + h3 {
     display: block;
     text-align: left;
   }
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
   .project {
-    width: 45%;
+    width: 80%;
   }
   /* timeline */
   /* Place the timelime to the left */
@@ -431,8 +442,8 @@ p + h3 {
   nav a:first-child:after {
     top: 6px;
   }
-  .flex-container {
-    justify-content: center;
+  .projects-container {
+    grid-template-columns: 1fr;
   }
   .project {
     width: 70%;
